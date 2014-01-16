@@ -1,0 +1,37 @@
+@import url(../scripts/vendor/sass-bootstrap/bootstrap-2.3.2.css);
+/* line 2, main.scss */
+.hero-unit {
+  margin: 50px auto 0 auto;
+  width: 300px;
+}
+
+/* line 6, main.scss */
+.todo-list {
+  list-style: none;
+}
+/* line 8, main.scss */
+.todo-list li {
+  margin: 18px 20px 18px 0;
+}
+
+/* line 11, main.scss */
+.is-done {
+  color: #bbb;
+  text-decoration: line-through;
+}
+
+/* line 16, main.scss */
+.todo-item {
+  border-bottom: 1px solid #bbb;
+  padding: 10px 0;
+  position: relative;
+}
+/* line 20, main.scss */
+.todo-item:last-child {
+  border: none;
+}
+
+/* line 23, main.scss */
+#new-todo {
+  margin: 1em 0 2em 0;
+}
