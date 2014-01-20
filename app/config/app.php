@@ -115,6 +115,7 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Cartalyst\Sentry\SentryServiceProvider' ,
 		'Mrjuliuss\Syntara\SyntaraServiceProvider',
+		'Orchestra\Imagine\ImagineServiceProvider',
 
 	),
 
@@ -181,6 +182,8 @@ return array(
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
 		'Sentry' => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
+		 'Image'           => 'App\Libraries\Facades\Image',
+		
 
 	),
 

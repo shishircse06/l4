@@ -1,0 +1,32 @@
+{
+	"name": "orchestra/imagine",
+	"description": "Imagine Package for Laravel 4",
+	"keywords": ["orchestra-platform", "orchestral", "laravel", "image-manipulation", "image"],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Mior Muhammad Zaki",
+			"email": "crynobone@gmail.com",
+			"homepage": "https://github.com/crynobone"
+		}
+	],
+	"require": {
+		"imagine/imagine": "~0.5"
+	},
+	"require-dev": {
+		"mockery/mockery": "0.8.*",
+		"illuminate/container": "4.1.*",
+		"illuminate/support": "4.1.*"
+	},
+	"autoload": {
+		"psr-0": {
+			"Orchestra\\Imagine": "src/"
+		}
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "2.2-dev"
+		}
+	},
+	"minimum-stability": "dev"
+}

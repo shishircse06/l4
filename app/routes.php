@@ -10,6 +10,12 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
+
+Route::get(
+	'/image/{size}/{file}',
+	'ImageController@getImage'
+);
+
 Route::get('/', function() {
  dd(Config::get('database.default'));
 });

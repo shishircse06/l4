@@ -1,5 +1,32 @@
 #Versions
 
+##1.2.2
+
+Same as 1.1.18
+
+##1.1.18
+
+* Refactoring code (deleting src/start.php, routes & filters are now loaded in SyntaraServiceProvider)
+* Dutch support
+* Turkish support
+* Swedish support
+* Greek support
+
+##1.2.1
+
+Same as 1.1.17 
+
+##1.1.17
+
+08/01/2014
+
+* New documentation
+* Bootstrap 3.0.2 to 3.0.3
+* Return of validation rules in a config file
+* Update user validation rules (expend string to 255 chars)
+* External assets now uses cdnjs by cloudfare
+* Self ban are now disabled
+
 ##1.2
 
 15/12/2013
