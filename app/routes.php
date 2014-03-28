@@ -31,7 +31,7 @@ $auth= new \Guzzle\Plugin\Oauth\OauthPlugin([
 
 $client->addSubscriber($auth);
 
-$response=$client->get("search/tweets.json?q=$query")->send();
+$response=$client->get("search/tweets.json?q=".urldecode($query))->send();
 $tweets=array_fetch($response->json()['statuses'],'text');
 dd($tweets);
 
