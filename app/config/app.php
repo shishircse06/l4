@@ -116,6 +116,7 @@ return array(
 		'Cartalyst\Sentry\SentryServiceProvider' ,
 		'Mrjuliuss\Syntara\SyntaraServiceProvider',
 		'Orchestra\Imagine\ImagineServiceProvider',
+		'acme\Twitter\TwitterServiceProvider',
 
 	),
 
@@ -183,6 +184,7 @@ return array(
 		'View'            => 'Illuminate\Support\Facades\View',
 		'Sentry' => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
 		 'Image'           => 'App\Libraries\Facades\Image',
+		  'Twitter'           => 'acme\Twitter\Twitter',
 		
 
 	),

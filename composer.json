@@ -19,7 +19,12 @@
 			 "app/libraries"
 			
 
-		]
+		],
+		"psr-0":{
+			"acme":"app/"
+		}
+			
+		
 	},
 	"scripts": {
 		"pre-update-cmd": [
