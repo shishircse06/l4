@@ -16,8 +16,26 @@ Route::get(
 	'ImageController@getImage'
 );
 
-Route::get('/', function() {
- dd(Config::get('database.default'));
+Route::get('twitter/search/{query}', function($query) {
+	//return $query;
+ //dd(Config::get('database.default'));
+	//return $username;
+$client = new \Guzzle\Service\Client('https://api.twitter.com/{version}',['version'=>'1.1']);
+$auth= new \Guzzle\Plugin\Oauth\OauthPlugin([
+	'consumer_key'=>'0MiD8yU2TcX9rYoxMMt3cg',
+	'consumer_secret'=>'EPVDwcbKI5VSifxJuEFyf3bOhOMOAMv4jIGOdFecEFg',
+	'token'=>'244868291-8sNTNf9HYVFmnvMknT5VMVQgGFV31aLxZPOPVDpu',
+	'token_secret'=>'BM2EswCX02Sf2EWUTaWHtsMT3vHTc2Wme7yssvMRdBIPo'
+
+	]);
+
+$client->addSubscriber($auth);
+
+$response=$client->get("search/tweets.json?q=$query")->send();
+$tweets=array_fetch($response->json()['statuses'],'text');
+dd($tweets);
+
+
 });
 
 // Route::get('/', function() {
