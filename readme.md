@@ -1,3 +1,3 @@
 #Testing Laravel
 
-Has contain basic TO-Do list and Syntara.
+It contains basic TO-Do list and Syntara.
